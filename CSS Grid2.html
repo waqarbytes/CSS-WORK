@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid2</title>
+    <style>
+       
+        
+        .box{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                   "side article article"
+                                   "footer footer footer";
+
+        }
+       .grid-box{
+            border: 2px solid red;
+            height: 55px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100;
+        text-align: center;
+        padding: 10px;
+        }
+        .grid-box1{
+        grid-area: nav;
+        background-color: aqua;
+        }
+        .grid-box2{
+            grid-area: side;
+            background-color: teal;
+        }
+        .grid-box3{
+            grid-area: article;
+            background-color: crimson;
+            
+        }
+        .grid-box4{
+            grid-area: footer;
+            background-color: indigo;
+        }
+       /* .grid-box5{
+            grid-area: nav;
+       }*/
+        
+    </style>
+</head>
+<body>
+   
+        
+    
+    <div class="box">
+        <div class="grid-box grid-box1">1</div>
+        <div class="grid-box grid-box2">2</div>
+        <div class="grid-box grid-box3">3</div>
+        <div class="grid-box grid-box4">4</div>
+        <div class="grid-box grid-box5">5</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Ball Animation</title>
+    <style>
+.box{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    background-color: chocolate;
+    border-radius: 75px;
+    left: 0%;
+    bottom: 0%;
+    text-align: center;
+    text-shadow: 45%;
+    color: aliceblue;
+   animation: bounce1 3s linear infinite, bounce2 1s  ease-out infinite alternate ;
+   
+}
+.conatiner{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(43, 72, 73);
+}
+@keyframes bounce1 {
+    from{
+left: 0%;
+    }
+    to{
+left: 100%;
+    }
+}
+@keyframes bounce2 {
+    from{
+bottom: 0%;
+    }
+    to{
+bottom: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box">
+            <h2>Bouncing Ball</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors MasterClass </title>
+    <!-- element selector -->
+    <style>
+        
+        p{
+            background-color: red;
+            color: wheat;
+        }
+        .red
+        {
+            background-color: aquamarine;
+            color: brown;
+        }
+        #blue{
+            background-color: chartreuse;
+            color: chocolate;
+        }
+        div > #ok {
+            background-color: blueviolet;
+            color: white;
+        }
+        a:visited  {
+            color: gold
+        }
+        
+
+        a:link{
+            color: blanchedalmond;
+
+        }
+        a:active{
+          background-color: darkgreen;
+          
+        }
+        a:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors MasterClass</h1>
+    <div >
+        
+            <li>Element Selector</li>
+           <p>I am a div</p>
+</div>
+<div>
+        <li> Class Selector</li>
+          <p  class="red">I am another Div</p>
+        </div>
+        
+        <div>
+        <li>ID Selector</li>
+        <p id="blue">
+            yet it is another div
+            
+        </p>
+</div>
+<div>
+        <li> Child Class</li>
+        <p id="ok">I am child selector</p>
+        
+        
+    </div>
+    <div>
+        <li>Pseudo Selector</li>
+        <a href="https://www.google.com" >Go to the Google</a>
+        <a href="https://www.facebook3.com">Go to the Facebook</a>
+    </div>
+
+
+   
+</body>
+</html>

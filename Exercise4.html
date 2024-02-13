@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4(CSS Multicolor)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Poppins:wght@400;700&family=Ubuntu&display=swap');
+    </style>
+    <style>
+        :root {
+           --primary-color:rgb(190, 133, 243);
+            text-decoration-color: white;
+            --text-color:white
+            --secondary-color:rgb(153, 238, 233);
+        }
+        :root {
+           --primary-color:rgb(133, 243, 217);
+            text-decoration-color: white;
+            --text-color:white;
+            --secondary-color:rgb(153, 238, 173);
+        }
+body{
+    background-color: var(--secondary-color);
+}
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0px;
+            font-family: Poppins'Lucida Sans', sans-serif ; 
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: 200px;
+            color: var(--text-color);
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
